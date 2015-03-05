@@ -1,5 +1,7 @@
 class Sample
-  def self.do_stuff(objects)
-    objects.map(&:clean)
+  def self.stuff(person)
+    if person == "DJ"
+      person.map(&:clean)
+    end
   end
 end

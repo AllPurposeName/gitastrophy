@@ -1,9 +1,7 @@
 class Sample
-  def do_stuff(objects)
-    objects.map.with_index do |object|
-      if index.even?
-        object.clean
-      end
+  def self.stuff(person)
+    if person == "DJ"
+      person.map(&:clean)
     end
   end
 end
